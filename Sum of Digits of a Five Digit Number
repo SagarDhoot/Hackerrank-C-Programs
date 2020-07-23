@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	
+   int num;
+    int sum;
+
+    /* Input number from user */
+    scanf("%d", &num);
+
+    /* Run loop till num is greater than 0 */
+    do
+    {
+        sum+=(num%10);
+        num /= 10;
+    } while(num != 0);
+    printf("%d",sum);
+    
+    return 0;
+}
